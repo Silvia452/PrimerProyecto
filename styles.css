@@ -1,0 +1,69 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    background-color: lightskyblue;
+    float:right;
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+
+}
+
+nav ul li a:hover{
+    color:dodgerblue;
+}
+
+header{
+    background-color: cornflowerblue;
+    text-align: center;
+    padding:20px;
+}
+
+header h1{
+    color:white;
+    font-family: muli;
+}
+
+section{
+    padding:20px;
+}
+
+section p, h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+footer{
+    background-color: dodgerblue;
+    color:white;
+    text-align: center;
+    padding:10px;
+}
+
+.imagenes{
+    display:flex;
+    justify-content: space-between;
+}
+
+.imagenes img{
+    max-width:30%;
+    height:auto;
+}
