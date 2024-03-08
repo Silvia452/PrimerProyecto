@@ -15,14 +15,14 @@ nav ul{
 }
 
 nav ul li{
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
+
 nav ul li a{
     text-decoration: none;
     color:white;
     font-weight:bold;
-
 }
 
 nav ul li a:hover{
@@ -38,6 +38,11 @@ header{
 header h1{
     color:white;
     font-family: muli;
+}
+
+header img{
+    height:auto;
+    width: 30%;
 }
 
 section{
@@ -58,12 +63,29 @@ footer{
     padding:10px;
 }
 
-.imagenes{
-    display:flex;
-    justify-content: space-between;
+.imagenes, .imagenes2{
+    display: flex;
+    justify-content: space-around ;
+    margin-bottom: 20px;
 }
 
-.imagenes img{
+.imagenes img, .imagenes2 img{
     max-width:30%;
-    height:auto;
+    height: auto;
 }
+
+
+
+
+/* MODO MÓVIL*/
+@media only screen and (max-width: 600px){
+    .imagenes, .imagenes2{
+        flex-direction: column; /*cambia a columna*/
+        align-items: center;
+
+    }
+    .imagenes img, .imagenes2 img{
+        margin-bottom: 10px; /*espacio entre las imágenes*/
+    }
+}
+
