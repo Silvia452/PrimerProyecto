@@ -2,29 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Países</title>
-    <link rel="stylesheet" href="sty.css">
+    <title>Travelling Artisans</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cuestionarios.html">Cuestionarios</a></li>
+        <li><a href="acercaDe.html">Acerca de</a></li>
+        <li><a href="">Contacto</a></li>
+    </ul>
+</nav>
+
 <header>
-    <nav>
-        <ul class="navbar">
-            <li><a href="1.html">Inicio</a></li>
-            <li><a href="listadoPaises.html">Listado de países</a></li>
-            <li><a href="cuestionarios.html">Cuestionarios</a></li>
-            <li><a href="acercaDe.html">Acerca de</a></li>
-        </ul>
-    </nav>
+    <h1>Travelling Artisans</h1>
 </header>
 
 
 <section>
-    <h2></h2>
+        <div id="contenido">
+            <h2>¡Bienvenido al mundo viajero!</h2>
+        </div>
+        <div id="contenido1">
+            <p>¡Realiza el siguiente cuestionario para saber que tipo de viajero eres!</p>
+        </div>
+</section>
+
+<section>
+    <form action="" mehtod="post" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="destino">Destino de viaje donde te gustaría viajar:</label>
+        <select id="destino" name="destino" required>
+            <option value="">Selecciona un destino</option>
+            <option value="Cancún">Cancún</option>
+            <option value="Roma">Roma</option>
+            <option value="Suecia">Suecia</option>
+            <option value="Londres">Londres</option>
+            <option value="Maldivas">Maldivas</option>
+        </select>
+
+        <label for="preferencias">¿Qué prefieres playa/montaña/piscina?</label>
+        <select id="preferencias" name="preferencias" >
+            <option value="">Selecciona una opción</option>
+            <option value="Playa">Playa</option>
+            <option value="Piscina">Piscina</option>
+            <option value="Montaña">Montaña</option>
+        </select>
+
+        <label for="gusto">¿Te gusta viajar en avión? Si/No</label>
+        <input type="text" id="gusto" name="gusto" required>
+
+        <br><input type="submit" value="Enviar">
+
+    </form>
+
 </section>
 
 
 
 
+
+
 <footer>
-    <p>Todos los derechos reservados</p>
+    <p>Derechos de autor 2024 Travelling Artisans. Todos los derechos reservados</p>
+    <p>¡Síguenos en nuestras redes sociales!</p>
 </footer>
+
+
+
+
+</body>
+</html>

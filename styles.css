@@ -1,6 +1,9 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
+    background-image: url("images/mundo.jpeg");
+
+
 }
 
 nav{
@@ -23,6 +26,8 @@ nav ul li a{
     text-decoration: none;
     color:white;
     font-weight:bold;
+    font-family: Copperplate;
+    font-size:20px;
 }
 
 nav ul li a:hover{
@@ -37,7 +42,8 @@ header{
 
 header h1{
     color:white;
-    font-family: muli;
+    font-family: Copperplate;
+    font-size:40px;
 }
 
 header img{
@@ -47,19 +53,26 @@ header img{
 
 section{
     padding:20px;
+
 }
 
 section p, h2{
+    background-color: lightskyblue;
+    font-family: "Baloo 2";
+
+
+}
+
+#contenido, #contenido1{
     display: flex;
     justify-content: center;
 }
-
-
 
 footer{
     background-color: dodgerblue;
     color:white;
     text-align: center;
+    font-family: "Baloo 2";
     padding:10px;
 }
 
@@ -74,6 +87,49 @@ footer{
     height: auto;
 }
 
+
+
+/*CUESTIONARIOS*/
+.formulario{
+    background-color: lightskyblue;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+label{
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+select,input[type="text"], input[type="number"]{
+    width:30%;
+    padding:10px;
+    margin-bottom: 10px;
+    border: 2px solid cornflowerblue;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+}
+
+input[type="submit"]{
+    background-color: cadetblue;
+    color: white;
+    padding:14px 20px;
+    margin:8px 0;
+    border-radius: 6px;
+    cursor:pointer;
+    width:30%;
+
+
+}
+
+input[type="submit"]:hover{
+    background-color: deepskyblue;
+
+}
 
 
 
