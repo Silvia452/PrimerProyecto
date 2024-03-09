@@ -80,6 +80,8 @@ footer{
     position: fixed;
 }
 
+
+
 .imagenes, .imagenes2{
     display: flex;
     justify-content: space-around ;
@@ -91,6 +93,7 @@ footer{
     height: auto;
 }
 
+/*IMAGENES REDES SOCIALES*/
 .imagenes_contacto{
     display: flex;
     justify-content: space-around ;
@@ -106,6 +109,7 @@ footer{
 
 .formulario{
     background-color: lightskyblue;
+    border-radius: 5px;
     align-items: center;
     text-align: center;
     padding: 20px;
@@ -151,13 +155,69 @@ input[type="submit"]:hover{
 
 /* MODO MÓVIL*/
 @media only screen and (max-width: 600px){
-    .imagenes, .imagenes2{
+    header h1{
+        font-size: 30px;
+    }
+
+    nav{
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child{
+        margin-bottom: 0;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .imagenes, .imagenes2, .imagenes_contacto{
         flex-direction: column; /*cambia a columna*/
         align-items: center;
 
     }
-    .imagenes img, .imagenes2 img{
+
+    .imagenes img, .imagenes2 img, .imagenes_contacto img{
         margin-bottom: 10px; /*espacio entre las imágenes*/
     }
-}
 
+    /*FORMULARIO*/
+    .formulario{
+        max-width: 300px;
+        padding: 10px;
+
+    }
+
+    label{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    select,
+    input[type="text"],
+    input[type="number"]{
+        width: 100%;
+        font-size: 14px;
+        padding:8px; /*reducir el relleno de los campos de entrada*/
+        margin-bottom: 8px; /*reducir el margen inferior de los campos de entrada*/
+    }
+
+    input[type="submit"]{
+        width: 100%;
+        font-size: 14px;
+        padding:12px 25px; /*reducir el relleno del botón*/
+        margin-bottom: 10px;
+    }
+
+    #enviar{
+        position: relative;
+    }
+
+
+
+}
