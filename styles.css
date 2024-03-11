@@ -2,7 +2,7 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background-image: url("images/mundo.jpeg");
+    background-image: url("images/mundo.jpeg"); /*imagen de fondo*/
 }
 
 nav{
@@ -11,7 +11,7 @@ nav{
 }
 
 nav ul{
-    list-style-type:none;
+    list-style-type:none; /*quitar puntos de la lista*/
     margin:0;
     padding: 0;
 }
@@ -21,10 +21,10 @@ nav ul li{
     margin-right: 20px;
 }
 
-nav ul li a{
+nav  ul  li  a{
     text-decoration: none;
     color:white;
-    font-weight:bold;
+    font-weight:bold; /*texto en negrita*/
     font-family: Copperplate;
     font-size:20px;
 }
@@ -55,7 +55,7 @@ section{
 
 }
 
-section p, h2{
+section > p, h2{
     background-color: lightskyblue;
     font-family: "Baloo 2";
     font-size: 22px;
@@ -68,7 +68,7 @@ section p, h2{
 }
 
 footer{
-    background-color: dodgerblue;
+    background-color: dodgerblue; /*color pie de pagina*/
     color:white;
     text-align: center;
     font-family: "Baloo 2";
@@ -93,17 +93,6 @@ footer{
     height: auto;
 }
 
-/*IMAGENES REDES SOCIALES*/
-.imagenes_contacto{
-    display: flex;
-    justify-content: space-around ;
-
-}
-
-.imagenes_contacto img{
-    width:10%;
-
-}
 
 /*CUESTIONARIOS*/
 
@@ -161,11 +150,11 @@ input[type="submit"]:hover{
 
     nav{
         float: none;
-        text-align: center;
+        text-align: center; /*ponerlo en el centro*/
     }
 
     nav ul li{
-        display: block;
+        display: block; /*ponerlo uno debajo del otro*/
         margin-bottom: 10px;
     }
 
