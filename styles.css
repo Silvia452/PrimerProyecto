@@ -142,8 +142,8 @@ input[type="submit"]:hover{
 
 
 
-/* MODO MÓVIL*/
-@media only screen and (max-width: 767px){
+/* MODO MÓVIL Y MODO TABLET*/
+@media only screen and (min-width: 767px) and (max-width: 1023px){
     header h1{
         font-size: 30px;
     }
@@ -210,3 +210,4 @@ input[type="submit"]:hover{
 
 
 }
+
